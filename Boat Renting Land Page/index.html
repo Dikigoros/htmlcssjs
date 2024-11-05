@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Rental</title>
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/locations.css">
+    <link rel="stylesheet" href="styles/reviews.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/faq.css">
+</head>
+<body>
+        <!-- Top Navigation Menu -->
+    <header class="top-nav">
+        <div class="logo">
+            <img src="images/logo.png.webp" alt="Logo">
+            <span>Click<span class="highlight">&</span>Boat</span>
+        </div>
+        <nav class="nav-links">
+            <select name="language" id="language-select">
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="es">Español</option>
+                <!-- Add more languages as needed -->
+            </select>
+            <select name="currency" id="currency-select">
+                <option value="eur">EUR · €</option>
+                <option value="usd">USD · $</option>
+                <!-- Add more currencies as needed -->
+            </select>
+            <a href="#">Register your boat</a>
+            <a href="#">Help</a>
+            <a href="#">Login</a>
+            <a href="#" class="register">Register</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/background.webp'); background-size: cover; background-position: center; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <div class="hero-overlay">
+            <div class="search-form">
+                <h1>The best solution for your yacht charter</h1>
+                <p>More than 50,000 private yacht rentals and boat charters near me and worldwide for your next boating trip</p>
+                <form>
+                    <input type="text" placeholder="e.g. Ibiza, Croatia, Sardinia..." name="destination" required>
+                    <input type="date" placeholder="Starting date" name="start-date" required>
+                    <input type="date" placeholder="Ending date" name="end-date" required>
+                    <input type="text" placeholder="Boat type" name="boat-type">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Locations Section -->
+    <section class="featured-locations">
+        <h2>The selection from the community</h2>
+        <div class="locations-grid">
+            <div class="location">
+                <img src="images/sailing-boat.jpg.webp" alt="Sailing Boat">
+                <p>Sailing boat</p>
+            </div>
+            <div class="location">
+                <img src="images/italy.jpg.webp" alt="Italy">
+                <p>Italy</p>
+            </div>
+            <div class="location">
+                <img src="images/croatia.jpg.webp" alt="Croatia">
+                <p>Croatia</p>
+            </div>
+            <div class="location">
+                <img src="images/motorboat.jpg.webp" alt="Motorboat">
+                <p>Motorboat</p>
+            </div>
+            <div class="location">
+                <img src="images/dubai.jpg.webp" alt="Dubai">
+                <p>Dubai</p>
+            </div>
+            <div class="location">
+                <img src="images/greece.jpg.webp" alt="Greece">
+                <p>Greece</p>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <h2>Fellow sailors share their <span class="highlight">amazing experiences</span></h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <img src="images/damien.jpg.webp" alt="Damien's profile picture" class="profile-img">
+                <div class="review-content">
+                    <h3>Damien <span class="stars">★★★★★</span></h3>
+                    <p class="review-date">Nov 2024 Charter sailboat Oceanis 381 Clipper in Lefkada</p>
+                    <p>We had a very nice time. The boat is not the youngest, but all essential equipment was well maintained and...</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="images/matheus.jpg.webp" alt="Matheus's profile picture" class="profile-img">
+                <div class="review-content">
+                    <h3>Matheus <span class="stars">★★★★★</span></h3>
+                    <p class="review-date">Nov 2024 Rent a boat in Coral 26 in Armação dos Búzios</p>
+                    <p>It was an absolute pleasure to serve. Their punctuality and respect for the crew made the experience even...</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="images/jasper.jpg.webp" alt="Jasper's profile picture" class="profile-img">
+                <div class="review-content">
+                    <h3>Jasper <span class="stars">★★★★★</span></h3>
+                    <p class="review-date">Nov 2024 Rent a boat in EOLO AS 590 OPEN - 130HP in Menaggio</p>
+                    <p>Everything was perfect as it should be. Very friendly and helpful communication. The boat was exactly what...</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="images/finn.jpg.webp" alt="Finn's profile picture" class="profile-img">
+                <div class="review-content">
+                    <h3>Finn <span class="stars">★★★★★</span></h3>
+                    <p class="review-date">Oct 2024 Charter sailboat Elan 45 in Split</p>
+                    <p>We had an amazing time on the water with Natko! Even before our booked date, he was extremely helpful and...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>FAQ</h2>
+
+        <div class="faq-item">
+            <h3>How can I charter a yacht with Click&Boat?</h3>
+            <p>Create a free account and fill out your nautical profile and CV. You can search on the website or app and use the filters: destination, dates, type of boat, number of passengers, planned activities, etc., to find the boat that best fits your needs. If you’re still unsure, you can get help from the Click&Boat cruise advisors free of charge. Once you find a boat you like, you can request a quote and/or immediate reservation, including the extras of your choice (insurance and services)! If necessary, Click&Boat or the boat owner will check the final details with you. You can then validate the reservation, and after that, all you have to do is set sail!</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What types of yachts are available for charter?</h3>
+            <p>On Click&Boat, you can rent all types of boats: license-free boats, RIBs (Rigid Inflatable Boats), motor boats, sailing or motor yachts, sailboats, catamarans, houseboats, jet skis... All you have to do is choose.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Is a sailing license required to charter a yacht?</h3>
+            <p>In many regions, the options for renting a boat without a license are often limited to those with smaller engines. For example, boats with engines less than 15 horsepower are frequently exempt from license requirements. Always check local laws to understand any limitations that might apply. If you do not have a license, you can opt to rent a boat with a skipper.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What are the costs of yacht charter?</h3>
+            <p>The cost of chartering a yacht on Click&Boat varies by location, type of boat, and season. Additional costs can include fuel, skipper fees, and extra equipment. Smaller boats start from €100 per day, with larger, more luxurious yachts costing a few thousand euros per day. Always confirm inclusions with the owner or our sales advisors.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What services are included in the yacht charter?</h3>
+            <p>When you rent a boat via Click&Boat, the bareboat and insurance are included (note that cancellation insurance is optional). As for additional services, such as the skipper, fuel, sports equipment, meal care, the presence of staff, or provisioning, it is recommended to check the advertisement carefully and request a quote from the owner, to be sure you have everything you need on board!</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I charter a yacht with a crew?</h3>
+            <p>Yes, you can charter a yacht with a crew. The crew usually includes a skipper and, depending on the offer, other crew members such as a cook, a deckhand, or a hostess. This way, you can sit back and enjoy the trip while experienced professionals take care of navigation, safety, catering, and service on board.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What should I bring when chartering a yacht?</h3>
+            <p>When chartering a yacht, you should bring sun protection (sun cream, hat, sunglasses), swimwear, towels, comfortable clothing, shoes with non-slip soles, personal documents (ID card, driving license), food and drink and, if necessary, medication and seasickness tablets. Don’t forget your camera for great memories!</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- About Us Section -->
+            <div class="footer-column">
+                <h3>ABOUT US</h3>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Who we are</a></li>
+                    <li><a href="#">How does it work?</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Rent out your boat</a></li>
+                    <li><a href="#">Professional boat owners</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Legal notices</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Join us!</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- You Can Trust Us Section -->
+            <div class="footer-column">
+                <h3>YOU CAN TRUST US</h3>
+                <p>Click&Boat is the leader in peer-to-peer yacht charters. Find a yacht to charter at a very low price, or offer your yacht for charter and earn extra income.</p>
+                <p>Click&Boat offers you the chance to charter yachts, sailboats, motorboats, RIBs, barges, catamarans, and jet skis near me or around the world. Choose your type of boat, duration of charter period, and contact the owner directly through our platform.</p>
+                <a href="#" class="customer-reviews">CUSTOMER REVIEWS</a>
+                <div class="trustpilot">
+                    <span class="stars">★★★★★</span>
+                    <p>Rating: 4.9 / 5 calculated on 557,695 reviews</p>
+                    <img src="images/trustpilot-logo.png.webp" alt="Trustpilot">
+                </div>
+            </div>
+
+            <!-- Destinations Section -->
+            <div class="footer-column">
+                <h3>DESTINATIONS</h3>
+                <ul>
+                    <li><a href="#">Malta</a></li>
+                    <li><a href="#">Croatia</a></li>
+                    <li><a href="#">Greece</a></li>
+                    <li><a href="#">Italy</a></li>
+                    <li><a href="#">Ibiza</a></li>
+                    <li><a href="#">Cannes</a></li>
+                    <li><a href="#">Zadar</a></li>
+                    <li><a href="#">Charter Sailboat</a></li>
+                    <li><a href="#">Charter Motorboat</a></li>
+                    <li><a href="#">Charter Catamaran</a></li>
+                    <li><a href="#">Charter RIB</a></li>
+                    <li><a href="#">Charter Yacht</a></li>
+                    <li><a href="#">All our destinations</a></li>
+                    <li><a href="#">All manufacturers</a></li>
+                </ul>
+            </div>
+
+            <!-- Follow Us Section -->
+            <div class="footer-column">
+                <h3>FOLLOW US</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook-icon.png.webp" alt="Facebook"></a>
+                    <a href="#"><img src="images/instagram-icon.png.webp" alt="Instagram"></a>
+                    <a href="#"><img src="images/twitter-icon.png.webp" alt="Twitter"></a>
+                </div>
+                <p>Leader in boat charters</p>
+                <p>With more than 55,000 privately owned yachts available for hire with or without a skipper...</p>
+                <div class="app-badges">
+                    <img src="images/app-store.png.webp" alt="App Store">
+                    <img src="images/google-play.png.webp" alt="Google Play">
+                </div>
+                <p>© Click&Boat 2024 - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="scripts/hero.js"></script>
+</body>
+</html>

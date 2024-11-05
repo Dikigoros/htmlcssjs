@@ -1,0 +1,48 @@
+/* FAQ Section */
+.faq {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.faq-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq {
+        padding: 20px;
+    }
+
+    .faq h2 {
+        font-size: 1.8em;
+    }
+
+    .faq-item h3 {
+        font-size: 1.1em;
+    }
+
+    .faq-item p {
+        font-size: 0.95em;
+    }
+}

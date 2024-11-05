@@ -1,0 +1,85 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('C:\Users\User\Desktop\Boat Renting Land Page\images\background.png.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.search-form h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.search-form p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.search-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-form input, .search-form button {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-form button {
+    background-color: #ff0066;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-overlay {
+        width: 90%;
+    }
+
+    .search-form h1 {
+        font-size: 1.5em;
+    }
+
+    .search-form p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 100%;
+    }
+
+    .hero-overlay {
+        padding: 15px;
+    }
+}
+
+
+
